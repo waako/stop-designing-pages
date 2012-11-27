@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
   <head>
@@ -69,3 +70,328 @@ $ git checkout gh-pages
     </div>
   </body>
 </html>
+=======
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Stop Designing for the Web</title>
+
+		<meta name="description" content="Presentation about how we need to stop thinking in terms of Pages when designing and working with the web">
+		<meta name="author" content="HTom Bamford">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<style>
+		.reveal blockquote, .reveal pre {border: 0;-webkit-box-shadow: none;
+		   -moz-box-shadow: none;
+		        box-shadow: none;
+		        text-align: center;
+		       }
+		.reveal section img {
+			border: 0;
+		}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section data-markdown>
+					# Stop 
+					# Designing 
+					# Pages  
+				</section>
+				<section data-markdown>
+					<blockquote><strong>Page</strong> simply doesn't describe what we are making on the web. </blockquote>
+				</section>
+				<section>
+					<blockquote>It is an oversimplified metaphor that tethers our medium to print.</blockquote>
+				</section>
+				<section>
+					<img src="img/website-content-outline.png" />
+				</section>
+				<section data-markdown>
+					<h2><blockquote> design for systems,<br> not pages.</blockquote></h2>
+					<br>
+					<quote class="fragment"><small>Samantha Warren [@samanthatoy](https://twitter.com/samanthatoy)<br><br>An Event Apart - San Francisco<br>
+					November 12–14, 2012</small></quote>
+				</section>
+				<section data-markdown>
+					# Why not Pages?
+				</section>
+				<section>
+					<img src="img/sc-resort-page.jpg" />
+				</section>
+				<section data-markdown>
+					# What's missing?
+					<br>
+
+					<div class="fragment">Hover states</div>
+					<div class="fragment">CMS defaults</div>
+					<div class="fragment">Resizing</div>
+					<div class="fragment">Out of context use</div>
+				</section>
+				<section data-markdown>
+					<h3>Interactions</h3>
+					<h3 class="fragment">Errors</h3>
+					<img class="fragment" src="img/form.jpg" />
+				</section>
+				<section data-markdown>
+					# What can we do?
+					<br>
+					<div class="fragment">Styleguides</div>
+					<div class="fragment">Libraries</div>
+					<div class="fragment">Patterns</div>
+				</section>
+				<section data-markdown>
+					# Styleguide
+
+					What do you put in a web style guide?
+				</section>
+				<section data-markdown>
+					# Tpography & Color
+					<img src="img/sc-typography.png" height="80%"  />
+				</section>
+				<section data-markdown>
+					# Page elements
+					<img src="img/sc-boxes.png" height="80%"  />
+				</section>
+				<section data-markdown>
+					# Content
+					<img src="img/sc-content.png" height="75%" />
+				</section>
+				<section data-markdown>
+					# What's the point?
+					<br>
+					<div class="fragment">Speed</div>
+					<div class="fragment">Documentation</div>
+					<div class="fragment">Legacy/Handover</div>
+				</section>
+				<section data-markdown>
+					# Before & Beyond the Style Guide
+					<br>
+					<div class="fragment">Use Wireframes, no need for static page designs</div>
+					<div class="fragment">Style Tiles</div>
+					<div class="fragment">Library of Design Elements & Patterns</div>
+				</section>
+				<section data-markdown>
+					# Style Tiles?
+					<br>
+					<div class="fragment">Somewhere between Moodboard and Comps</div>
+					<br>
+					<div class="fragment">Includes colour guides</div>
+					<div class="fragment">Main Typographic Elements</div>
+					<div class="fragment">Ideas for Style</div>
+				</section>
+
+				<section data-markdown>
+					### Examples
+					<img src="img/ficly-lrg.jpeg" height="75%" />
+
+					<pre><small>http://viget.com/inspire/behind-the-scenes-mood-boards</small></pre>
+				</section>
+				<section data-markdown>
+				<img src="img/bypass-lrg.jpeg" height="85%" />
+
+				<pre><small>http://viget.com/inspire/behind-the-scenes-mood-boards</small></pre>
+				</section>
+				<section data-markdown>
+				<img src="img/moodboard.png" height="85%" />
+
+				<pre><small>http://viget.com/inspire/behind-the-scenes-mood-boards</small></pre>
+				</section>
+				<section data-markdown>
+					### How do I see how my design elements sit in my layouts?
+				</section>
+				<section data-markdown>
+					* Print your design elements
+					* Cut them up
+					* Move them around your wireframe layouts
+					
+					<br>
+					**Extra bonus: you are now designing for responsive layouts!**
+				</section>
+				<section>
+					<img src="img/two-linear-layouts.jpg" height="90%"  />
+					<pre><small></small></pre>
+				</section>
+
+				<section data-markdown>
+					# Beyond the initial design
+					<div>
+						<ul>
+							<li class="fragment">Library of reusable elements</li>
+							<li class="fragment">Annoted document with values (font, colour, gradients)</li>
+							<li class="fragment">HTML elements - Patterns
+							 <ul class="fragment">
+							 	<li>live example</li>
+							 	<li>html markup</li>
+							 	<li>CSS</li>
+							 </ul>
+							</li>
+							<li class="fragment">Living Styleguides</li>
+						</ul>
+					</div>
+				</section>
+				<section data-markdown>
+					# Library of Reusable elements
+					<br>
+					<div class="fragment">
+						<strong>It's nothing new!</strong>
+					</div>
+				</section>
+				<section data-markdown>
+					Remember Yahoo! Design Pattern Library, YUI?
+					Built in 2005!
+
+					<div class="fragment">
+						It is a library of various design patterns
+						Usable in wireframes, mockups, prototypes.
+					</div>
+				</section>
+				<section data-markdown>
+					# Since then?
+					
+					<br>
+
+					* Jeremy Keith: Pattern Primers
+					* Paul Robert Lloyd: Style Guide & Barebones
+					* Oli.jp: Style Guide
+					* 24 Ways: Front-end Style Guides (Anna Debenham)
+					* Kalei Style Guide
+					* Pea.rs - Wordpress theme originally
+				</section>
+				<section>
+					<img src="img/pea-rs.png" />
+				</section>
+				<section data-markdown>
+					## You already know some:
+
+					* Twitter Bootstrap (it's a style guide)
+					* BBC Global Language Experience
+				</section>
+				<section data-markdown>
+					# Who actually uses a web style guide?
+					
+					<br>
+
+					* Mozilla [https://www.mozilla.org/en-US/styleguide/](https://www.mozilla.org/en-US/styleguide/)
+					* Survey Monkey
+					* GitHub
+					* Drupal.org
+					* Mailchimp (Brand Assets)
+					* Starbucks
+					* Gov.uk
+					* Twitter
+				</section>
+				<section data-markdown>
+					## Examples?
+					<div class="fragment">
+
+						How about Survey Monkey, <br>
+						built by Chris Coyler, CSS Tricks.
+						<br><br>
+						It's on Github:<br> <a href="http://chriscoyier.github.com/SurveyMonkey-Design-Patterns/">http://chriscoyier.github.com/SurveyMonkey-Design-Patterns/</a>
+
+					</div>
+				</section>
+				<section>
+					<img src="img/survey-monkey-buttons.png" />
+				</section>
+				<section>
+					<img src="img/survey-monkey-nav.png" />
+				</section>
+				<section>
+					<img src="img/survey-monkey-accordion.png" />
+				</section>
+				<section data-markdown>
+					# What about Drupal?
+
+					Start with the Styleguide module, then add Styleguide Extra, maybe even Themetest modules.
+					Check out my Base theme  layered PSD on GitHub.
+
+					Chapter 3, Design for Drupal a template approach
+					Zivtech's Drupal Style Guide
+				</section>
+				<section data-markdown>
+					Even more awesome: the guys at Reload.dk have put together a great resource for putting a Drupal Style Guide together.
+					Check out their Google Doc: [reload.dk/drupalstyleguide](reload.dk/drupalstyleguide.)
+				</section>
+				<section data-markdown>
+					## Building your own?
+
+					There are more and more tools out there to streamline this process, to name a few:
+
+					* Snugug: Style Sites (living style guide)
+					* Smashing Magazine: Create pattern library with Evernote & Fireworks/
+					...
+
+				</section>
+				<section data-markdown>
+					## Watch this space for updates!
+				
+					<a href="http://twitter.com/waako">@waako</a><br><br>
+					<a href="http://github.com/waako">waako on GitHub</a>
+				
+
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+				rollingLinks: false,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
+>>>>>>> master
